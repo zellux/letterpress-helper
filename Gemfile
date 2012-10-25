@@ -38,3 +38,7 @@ gem 'slim-rails'
 gem 'twitter-bootstrap-rails'
 gem 'thin'
 gem 'pg'
+
+group :development do
+  gem 'sqlite3'
+end

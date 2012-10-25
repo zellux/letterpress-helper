@@ -2,7 +2,7 @@ input type='text' placeholder='Type in key characters...' id='filter-input'
 
 .wordlist
   table.table class='span2'
-    - @list.take(100).each do |item|
+    - @list.take(500).each do |item|
       tr
         td class='span1 length'
           = item.size
