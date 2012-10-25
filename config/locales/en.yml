@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  placeholder:
+    type_25_letters: Please tell me the given 25 letters
+    filter_chars: Which letters you want to have
+  title:
+    possible_words: Possible words generated from

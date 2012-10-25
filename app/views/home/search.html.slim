@@ -1,7 +1,15 @@
-input type='text' placeholder='Type in key characters...' id='filter-input'
+legend = I18n.t('title.possible_words')
+
+table.table.table-bordered.letter-list
+  - @letters.each do |word|
+    tr
+      - word.each do |letter|
+        td = letter
+  
+input type='text' placeholder=I18n.t('placeholder.filter_chars') id='filter-input'
 
 .wordlist
-  table.table class='span2'
+  table.table
     - @list.take(500).each do |item|
       tr
         td class='span1 length'
