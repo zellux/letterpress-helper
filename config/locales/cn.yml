@@ -1,0 +1,6 @@
+cn:
+  placeholder:
+    type_25_letters: 请输入给定的 25 个字母
+    filter_chars: 单词必须包含的字母
+  title:
+    possible_words: 单词列表由这些字母生成
