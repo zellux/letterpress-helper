@@ -15,7 +15,7 @@ input type='text' placeholder=I18n.t('placeholder.filter_chars') id='filter-inpu
 
 .wordlist
   table.table
-    - @list.take(500).each do |item|
+    - @list.take(200).each do |item|
       tr
         td class='span1 length'
           = item.size
