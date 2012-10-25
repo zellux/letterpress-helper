@@ -4,3 +4,6 @@ cn:
     filter_chars: 单词必须包含的字母
   title:
     possible_words: 单词列表由这些字母生成
+  error:
+    25_letters: 请输入 25 个字母
+

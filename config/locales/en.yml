@@ -8,3 +8,5 @@ en:
     filter_chars: Letters the words must have
   title:
     possible_words: Possible words generated from
+  error:
+    25_letters: Please type in exactly 25 letters
