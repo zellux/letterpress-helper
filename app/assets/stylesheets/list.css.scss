@@ -1,0 +1,10 @@
+.wordlist {
+    td {
+        font: 18px;
+        font-family: Monaco, Consolas, 'Courier new', monospace;
+        &.length {
+            text-align: center;
+        }
+    }
+}
+

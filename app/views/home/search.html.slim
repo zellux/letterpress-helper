@@ -1,3 +1,9 @@
-ul
-  - @list.take(100).each do |item|
-    li = item
+input type='text' placeholder='Filter words...' id='filter-input'
+
+.wordlist
+  table.table class='span2'
+    - @list.take(100).each do |item|
+      tr
+        td class='span1 length'
+          = item.size
+        td class='word' = item
