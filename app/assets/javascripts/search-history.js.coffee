@@ -19,7 +19,7 @@ $ ->
 		return array
 
 	save_matches = (matches_array) =>
-		localStorage['matches'] = matches_array.toString()
+		localStorage['matches'] = matches_array.slice(-10).toString()
 
 	add_match = (match) =>
 		matches_array = get_matches()
