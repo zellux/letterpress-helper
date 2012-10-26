@@ -1,7 +1,10 @@
 $ ->
 	build_dropdown_items = ->
-		matches = localStorage['matches'] || ''
-		array = matches.split ','
+		matches = localStorage['matches']
+		if matches
+			array = matches.split ','
+		else
+			array = []
 		if array.length == 0
 			$('.dropdown-menu').html('<li class="disabled"><a>No history</a></li>')
 		else
@@ -14,12 +17,15 @@ $ ->
 	build_dropdown_items()
 
 	$('#clear').click (e) ->
-		localStorage['matches'] = ''
+		localStorage.removeItem 'matches'
 		build_dropdown_items()
 		e.preventDefault()
 
 	$('#search').click ->
-		matches = localStorage['matches'] || ''
-		array = matches.split ','
+		matches = localStorage['matches']
+		if matches
+			array = matches.split ','
+		else
+			array = []
 		array.push $('#letters').val()
 		localStorage['matches'] = array.toString()
